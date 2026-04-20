@@ -60,18 +60,14 @@ export function FinalCTA() {
 
   return (
     <section ref={ref} className="relative py-32 lg:py-40 overflow-hidden min-h-[60vh]">
-      {/* Video Background */}
-      <div ref={videoRef} className="absolute inset-0 z-0 h-[120%]">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="metadata"
-          className="w-full h-full object-cover opacity-50"
-        >
-          <source src="/videos/7424090-uhd_2160_3840_30fps.mp4" type="video/mp4" />
-        </video>
+      {/* Background Image */}
+      <div ref={videoRef} className="absolute inset-0 z-0">
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ 
+            backgroundImage: 'url(https://images.pexels.com/photos/1813272/pexels-photo-1813272.jpeg?auto=compress&cs=tinysrgb&w=1920)',
+          }}
+        />
         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-[#0a0a0a]/70" />
         {/* Gradient overlay */}

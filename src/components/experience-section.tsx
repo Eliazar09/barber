@@ -68,21 +68,10 @@ export function ExperienceSection() {
   }, [])
 
   return (
-    <section ref={ref} className="relative py-24 lg:py-32 overflow-hidden">
-      {/* Video Background */}
-      <div className="absolute inset-0 z-0">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="metadata"
-          className="w-full h-full object-cover opacity-30"
-        >
-          <source src="/videos/7426387-uhd_2560_1080_25fps.mp4" type="video/mp4" />
-        </video>
-        <div className="absolute inset-0 bg-[#0a0a0a]/80" />
-      </div>
+    <section ref={ref} className="relative py-24 lg:py-32 overflow-hidden bg-[#0a0a0a]">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 dot-pattern opacity-20" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a] via-transparent to-[#0a0a0a]" />
 
       <div className="relative z-10 max-w-[1200px] mx-auto px-6 lg:px-12">
         {/* Header */}

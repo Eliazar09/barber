@@ -545,9 +545,6 @@
   .h-\[60vh\] {
     height: 60vh;
   }
-  .h-\[120\%\] {
-    height: 120%;
-  }
   .h-\[130\%\] {
     height: 130%;
   }
@@ -1075,6 +1072,12 @@
     --tw-gradient-to: transparent;
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
+  .bg-cover {
+    background-size: cover;
+  }
+  .bg-center {
+    background-position: center;
+  }
   .fill-\[\#c9a961\] {
     fill: #c9a961;
   }
@@ -1372,6 +1375,9 @@
   }
   .opacity-10 {
     opacity: 10%;
+  }
+  .opacity-20 {
+    opacity: 20%;
   }
   .opacity-30 {
     opacity: 30%;
